@@ -14,10 +14,14 @@ class HomePage extends StatelessWidget {
           "Catalog App",
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Text("Welcome to ${days} days of flutter by ${name}"),
-        ),
+      body: Column(
+        children: [
+          Container(
+            child: Text(
+              "welcome to flutter practice app",
+            ),
+          ),
+        ],
       ),
       drawer: MyDrawer(),
     );
