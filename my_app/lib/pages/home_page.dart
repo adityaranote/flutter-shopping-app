@@ -43,20 +43,20 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ((CatalogModel.items == null && CatalogModel.items == null)
-            ? ListView.builder(
-                itemCount: CatalogModel.items?.length,
+        child: 
+             ListView.builder(
+                itemCount: CatalogModel.items.length,
                 itemBuilder: (context, index) {
                   return ItemWidget(
-                    item: CatalogModel.items![index],
+                    item: CatalogModel.items[index],
                   );
                 },
               )
-            : Center(
-                child: CircularProgressIndicator(),
-              )),
-      ),
-      drawer: MyDrawer(),
-    );
+            
+              ),
+              drawer: MyDrawer(),
+      );
+      
+   
   }
 }
